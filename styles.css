@@ -1,1 +1,10 @@
-/*  your css code here. If applicable */
+#output{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+	width: 405px;
+	height: 20px;
+    background-color: rgb(118, 109, 109);
+    border-radius: 5px;
+}

@@ -1,1 +1,19 @@
-//your JS code here. If required.
+async function form(text, delay) {
+    try {
+        const response = await new Promise((resolve, reject) => {
+            setTimeout(() => {
+               resolve(text);
+            }, delay)
+        });
+        document.getElementById("output").innerText = text+" - "+delay;
+    }
+    catch (error) {
+        console.error("Error:", error);
+    }
+}
+
+document.getElementById("btn").addEventListener("click", ()=>{
+    let text = document.getElementById("text").value;
+    let delay = document.getElementById("delay").value;
+    form(text, delay);
+});
