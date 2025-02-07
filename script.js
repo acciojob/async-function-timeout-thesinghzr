@@ -5,7 +5,7 @@ async function form(text, delay) {
                resolve(text);
             }, delay)
         });
-        document.getElementById("output").innerText = text+" - "+delay;
+        document.getElementById("output").innerText = text;
     }
     catch (error) {
         console.error("Error:", error);
